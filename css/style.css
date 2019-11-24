@@ -1,0 +1,403 @@
+/*Глобальные стили*/
+    *{
+        padding: 0;
+        margin: 0px;
+        box-sizing:border-box;
+    }
+    body{
+        font-family: 'Open Sans', sans-serif;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+    h1 {
+        font-weight: 400;
+        font-size: 36px;
+        margin-top: 25px;
+    }
+    h2 {
+        font-weight: 400;
+        font-size: 26px;
+        color: #1FA67A;
+    }
+
+/*Стили к header */
+    header{
+        width: 100%;
+        background: #fff;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+    }
+    header img {
+        margin-top: 5px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .logo :hover {
+        opacity: 0.8;
+    }
+
+    span {
+        font-weight: bold;
+    }
+    .logo {
+        margin-left: 15%;
+    }
+    .person{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 1.5%;
+        margin-left: 2.5%;
+    }
+    .name {
+        font-size: 40px;
+        font-weight: bold;
+        color: #1FA67A;
+    }
+    .name_info {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .contacts {
+        margin-top: 35px;
+        margin-bottom: 30px;
+        margin-right: 15%;
+    }
+
+/*Стили к nav */
+    nav {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 14px;
+        position: relative;
+    }
+    .topnav a{
+        padding: 16px;
+        color: #999;
+        line-height: 50px;
+    }
+    .topnav a:hover{
+        background: #1FA67A;
+        color: #fff;
+    }
+    .topnav .icon{
+        display: none;
+    }
+
+/*Стили к slideshow-container */
+    .slideshow-container {
+        width: 100%;  
+        margin: auto;
+    }
+    .slideshow-container img {
+        max-height: 500px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        width: 100%;
+        display: inline-block;
+    }
+    .mySlides {
+        display: none;
+    }
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1s;
+        animation-name: fade;
+        animation-duration: 1s;
+    }
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+/*Стили к about_me*/
+    .about_me {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+    .about_me h1 {
+        text-align: center;
+    }
+
+    hr {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .container .photo_right {
+        float: right;
+        border-radius: 10px;
+        max-width: 350px;
+        margin-left: 25px;
+    }
+
+    .container .photo_right2 {
+        float: right;
+        border-radius: 10px;
+        max-width: 350px;
+        margin-left: 25px;
+    }
+
+    .container .one {
+        max-width: 450px;
+        text-align: left;
+    }
+    .one p {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .one a {
+        color: #000;
+    }
+
+    .one a:hover {
+        color: #1FA67A;
+        transform: translateX(5px);
+    }
+
+    .container .two {
+        max-width: 450px;
+        text-align: left;
+    }
+    .two li {
+        margin-top: 25px;
+    }
+    .two ul {
+        margin-bottom: 25px;
+    }
+
+    .photo_left {
+        border-radius: 10px;
+        max-width: 350px;
+        margin-right: 25px;
+        align-content: left;
+    }
+    .photo_left2 {
+        border-radius: 10px;
+        max-width: 350px;
+        margin-right: 25px;
+        align-content: left;
+    }
+    .container h2{
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    .three {
+        float: right;
+        max-width: 450px;
+        text-align: center;
+    }
+    .three p {
+        margin-bottom: 10px;
+    }
+
+    .four p {
+        margin-bottom: 10px;
+    }
+
+/*Стили к footer */
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social img {
+        margin-left: 12px;
+    }
+
+    .social img:hover {
+        opacity: 0.9;
+    }
+
+    footer {
+        margin-top: 25px;
+        width: 100%;
+        height: auto;
+        background: #222222;
+        padding: 30px 0 30px 0;
+    }
+
+/*Стили к media*/
+        @media screen and (max-width: 1920px){
+            .topnav a{
+                display: none;
+                padding: 4px;
+            }
+            .topnav a.icon{
+                float:left;
+                margin-top: -10px;
+                display: block;
+                color:#000;
+                font-size: 25px;
+            }
+            .topnav.responsive{
+                position: relative;
+                top: 50px;
+            }
+            nav .topnav.responsive{
+                height: 450px;
+            }
+            .topnav.responsive a.icon{
+                position: absolute;
+                top: -50px;
+            }
+            .topnav.responsive a{
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        @media screen and (max-width: 1680px){
+            h1 {
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .name {
+                font-size: 30px;
+            }
+            .name_info {
+                font-size: 14px;
+            }
+            .contacts {
+                font-size: 14px;
+            }
+            header img {
+                width: 120px;
+                height: 120px;
+            } 
+            .photo_left2 {
+                display: none;
+            } 
+            .photo_right2 {
+                display: none;
+            }         
+        }
+
+        @media screen and (max-width: 1368px) {
+            .container a {
+                width: 160px;
+                border-radius: 10px;
+            }
+            .about_me img {
+                max-width: 300px;
+            }
+            .one .two .three .four {
+                max-width: 400px;
+            }
+
+            .container .photo_right {
+                max-width: 300px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 16px;
+            }
+            .container a {
+                width: 120px;
+                border-radius: 8px;
+            }
+            .name {
+                font-size: 24px;
+            }
+            .name_info {
+                font-size: 12px;
+            }
+            .contacts {
+                font-size: 12px;
+            }
+            .topnav a.icon {
+                font-size: 20px;
+            }
+            header img {
+                width: 100px;
+                height: 100px;
+                margin-top: 20px;
+            }
+            .about_me img {
+                display: none;
+            }
+            .one .two .three .four {
+                max-width: 450px;
+            }
+            .container .photo_right {
+                display: none;
+            }
+            .three {
+                float: none;
+                text-align: left;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .contacts {
+                display: none;
+            }
+            header img {
+                width: 80px;
+                height: 80px;
+                margin-top: 30px;
+            }
+            .person {
+                margin-right: 15%;
+                text-align: center;
+            }
+            .person_info {
+                margin-right: 15%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .logo {
+                display: none;
+            }
+            .person {
+                margin-left: 15%;
+                margin-right: 15%; 
+                text-align: center;
+            }
+            .person_info {
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+            .container a {
+                width: 100px;
+            }
+            .topnav a.icon {
+                font-size: 15px;
+            }
+
+            nav {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 360px) {
+            nav .topnav.responsive{
+                height: 525px;
+            }
+        }
+
+
+    
